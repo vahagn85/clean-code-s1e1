@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo App</title>
   <link
     href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
     rel="stylesheet"
   >
-  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="style.css" media="screen">
 </head>
 <body class="todo-app">
-  <div class="header">
+  <header class="header">
     <img
       src="./eisenhower-matrix.jpg"
       alt="Eisenhower Matrix"
@@ -21,9 +23,9 @@
     >
       Want more details?
     </a>
-  </div>
-  <div class="todo">
-    <p id="add-section">
+  </header>
+  <main class="todo">
+    <section id="add-section">
       <label
         for="new-task"
         class="todo__add-label"
@@ -38,7 +40,7 @@
         >
         <button class="todo__add-btn">Add</button>
       </div>
-    </p>
+    </section>
     <h3 class="todo__heading">Todo</h3>
     <ul id="complete-tasks" class="todo__list">
       <li class="todo__list-item">
@@ -88,7 +90,7 @@
         </button>
       </li>
     </ul>
-  </div>
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
